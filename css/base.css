@@ -291,7 +291,7 @@ footer h4{
 }
 footer p{
 	margin-bottom: 23px;
-	font-size: 13px;
+
 	line-height: 2;
 }
 footer a{
@@ -312,7 +312,7 @@ footer .footer_info {
 
 footer .footer_info li{
 	margin-bottom: 10px;
-	font-size: 13px;
+  
 }
 footer .footer_about {
 	width: 40%;
@@ -330,7 +330,7 @@ footer .footer_about {
 
   footer p{
     margin-bottom: 23px;
-    font-size: 13px;
+
     line-height: 1;
   }
 
