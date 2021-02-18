@@ -361,8 +361,6 @@ main {
   color: var(--col-1);
 }
 
-
-
 main .title h3::after {
   content: "";
   height: 2px;
@@ -371,4 +369,49 @@ main .title h3::after {
   display: inline-block;
   margin-left: 1%;
 }
+/* ROWS AND COLUMNS */
+
+.row {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "col-l col-r"
+  ;
+}
+
+.col-l {
+  grid-area: col-l;
+  justify-self: center;
+}
+
+.col-r {
+  grid-area: col-r;
+  justify-self: center;
+}
+
+
+/* MEDIA QUERIES FOR ROWS AND COLUMNS */
+
+@media all and (max-width: 400px) {
+  .row {
+    /* MAKES ROW TO COLUMN */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "col-l"
+      "col-r"
+    ;
+  }
+}
+
+
+/* PLACEHOLDER */
+
+.sq {
+  height: 200px;
+  width: 200px;
+  background: black;
+}
+
+
+/* CSS ART */
 
