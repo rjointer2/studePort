@@ -443,6 +443,7 @@ section {
 }
 
 form {
+  display: grid;
   overflow: hidden;
   width: 100%;
   max-width: 800px;
@@ -452,11 +453,30 @@ form {
   grid-template-columns: repeat(2, 1fr);
 }
 
+@media all and (max-width: 500px)  {
+  form {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "form_col-l"
+      "fomr_col-r"
+    ;
+  }
+}
+
 form h2 {
   font-weight: 600;
   line-height: 1;
   margin-bottom: 0.7rem;
 }
+
+/* LEFT HAND SIDE OF THE FORM */
+
+.form_col_l {
+  padding: 1em;
+}
+
+/* RIGHT HAND SIDE OF THE FORM */
 
 
 .form_col_r h2 {
