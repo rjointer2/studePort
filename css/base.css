@@ -4,7 +4,9 @@
   
 /* COLOR PALETTE */
 :root {
-  --col-1: blue;
+  --col-1: #d1a586;
+  --col-2: #313942;
+  --col-3: #FFFFFF;
 }
 
 /* BASE FONT */
@@ -29,6 +31,10 @@
 *, ::before, ::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+html {    
+  scroll-behavior: smooth;
 }
 
 body {
@@ -358,7 +364,7 @@ footer .footer_about {
 main {
   min-height: 600px;
   padding-top: 200px;
-  color: var(--col-1);
+  color: ;
 }
 
 main .title h3::after {
@@ -413,5 +419,113 @@ main .title h3::after {
 }
 
 
-/* CSS ART */
 
+
+
+
+
+
+
+/* SECTIONS */
+
+section {
+  padding: 1em;
+  min-height: 700px;
+}
+
+
+/* CONTACT STYLES */
+
+.contact_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+form h2 {
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+
+.form_col_r h2 {
+  color: var(--col-3);
+}
+
+.form_col_r {
+  background-color: var(--col-2);
+  position: relative;
+  padding: 1em;
+}
+
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  background: linear-gradient(135deg, transparent, black);
+}
+
+.circle.a {
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  right: -40px;
+}
+
+.circle.b {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  right: 30px;
+}
+
+.input_container {
+  position: relative;
+  margin: 1rem 0
+}
+
+.input {
+  width: 100%;
+  outline: none; 
+  background: none;
+  border: 2px solid var(--col-3);
+  padding: 0.6rem 1.2rem;
+  color: var(--col-3);
+  transition: 0.3s;
+}
+
+textarea.input {
+  margin-top: 1em;
+  min-height: 150px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input::placeholder {
+  color: var(--col-3);
+}
+.btn {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--col-1);
+  border: 2px solid var(--col-3);
+  color: var(--col-3);
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: none;
+  color: var(--col-2)
+}
