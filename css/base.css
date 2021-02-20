@@ -464,7 +464,7 @@ form h2 {
 
 /* ABOUT SECTON */
 
-.about_container {
+.col_container {
   background: var(--col-2);
   padding: 3em;
   border-left: 4px solid var(--col-1);
@@ -472,7 +472,7 @@ form h2 {
   overflow: hidden;
 }
 
-.about_title {
+.col_title {
   font-weight: 600;
   font-size: var(--font-size-4);
   width: 100%;
@@ -480,25 +480,20 @@ form h2 {
   transform: translateX(-1em);
 }
 
-.cr_about {
+.col_cr {
   border-radius: 50%;
   position: absolute;
   background: linear-gradient(135deg, transparent, black);
 }
 
-.cr_about.a {
+.col_cr.a {
   height: 100px;
   width: 100px;
   right: 101px;
   transform: translateY(10px);
 }
 
-.sq_about {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  background: var(--col-2)
-}
+
 
 
 /* 
