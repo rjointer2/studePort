@@ -398,80 +398,6 @@ img {
 }
 
 
-/* 
-
-
-.circle {
-  border-radius: 50%;
-  position: absolute;
-  background: linear-gradient(135deg, transparent, black);
-}
-
-.circle.a {
-  width: 100px;
-  height: 100px;
-  top: 100px;
-  right: -40px;
-}
-
-.circle.b {
-  width: 80px;
-  height: 80px;
-  top: 10px;
-  right: 30px;
-}
-
-.input_container {
-  position: relative;
-  margin: 1rem 0
-}
-
-.input {
-  width: 100%;
-  outline: none; 
-  background: none;
-  border: 2px solid var(--white-color);
-  padding: 0.6rem 1.2rem;
-  color: var(--col-3);
-  transition: 0.3s;
-}
-
-textarea.input {
-  margin-top: 1em;
-  min-height: 150px;
-  resize: none;
-  overflow-y: auto;
-}
-
-.input::placeholder {
-  color: var(--white-color);
-}
-.btn {
-  padding: 0.6rem 1.2rem;
-  background-color: var(--light-color-alt);
-  border: 2px solid var(--white-color);
-  color: var(--white-color);
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: none;
-  color: var(--dark-color)
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .hi::after {
@@ -487,28 +413,6 @@ textarea.input {
 .text_flex_end {
   text-align: end;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
