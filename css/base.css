@@ -1,22 +1,20 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-}
 
-/*===== Colores =====*/
-:root {
   --first-color: #3664F4;
   --dark-color: #2d3c54;
   --light-color-alt: #bd9980;
   --white-color: #E6E7E9;
-}
 
-/*===== Fuente y tipografia =====*/
-:root {
   --body-font: 'Poppins', sans-serif;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
+
+  --z-fixed: 100;
+
 }
+
 
 @media screen and (min-width: 768px) {
   :root {
@@ -25,15 +23,11 @@
   }
 }
 
-/*===== z index =====*/
-:root {
-  --z-fixed: 100;
-}
 
-/*===== BASE =====*/
+/* BASE */
 *, ::before, ::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -49,6 +43,7 @@ ul {
   list-style: none;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -63,7 +58,7 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  grid-template-columns: 100%;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -82,11 +77,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__logo {
@@ -165,8 +160,8 @@ img {
 
 .nav__menu {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .nav__item {
@@ -263,7 +258,7 @@ img {
     border-radius: .25rem;
   }
   .nav__link:hover {
-    background-color: var(--first-color);
+    
   }
   .active {
    
@@ -344,7 +339,17 @@ img {
 
 
 
+
+
+
+
+
+
 /* SECTIONS */
+
+.main {
+  padding-top: 10em;
+}
 
 .content_container {
   display: flex;
@@ -386,20 +391,6 @@ img {
   padding: 1em;
 }
 
-.sq {
-  position: absolute;
-  opacity: .7;
-  background-color: var(--dark-color);
-}
-
-.sq.sq_blue {
-  width: 100px;
-  height: 100px;
-}
-
-
-
-
 .hi::after {
   content: "";
   height: 1px;
@@ -413,8 +404,6 @@ img {
 .text_flex_end {
   text-align: end;
 }
-
-
 
 /* CONTACT STYLES */
 
@@ -451,6 +440,8 @@ form h2 {
   line-height: 1;
   margin-bottom: 0.7rem;
 }
+
+
 
 
 /* LEFT HAND SIDE OF THE FORM */
