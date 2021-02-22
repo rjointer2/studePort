@@ -15,3 +15,5 @@ To show employers skillset.
 
 Please send comments, ideas, and criticism to help me grow 
 as a web developer!
+
+![ScreenShot](/screenshot.png)
